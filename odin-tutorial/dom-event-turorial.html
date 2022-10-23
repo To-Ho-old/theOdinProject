@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM event turorial</title>
+    <script src="dom-event-turorial.js" defer></script>
+</head>
+<body>    
+    <!-- use "onclick" on html page, ONE event per element -->
+    <button onclick="alert('Hello World')">Method 1</button>
+    <p>Less than idea because only 1 "onclick" even per element. Thus clustering html</p>
+    <!-- Method 2: onlick 2 parts, ONE onclick event per element, html file-->
+    <button id="btn">Method 2</button>
+    <p>Only 1 "onclick" per element. Less clustering html</p>
+    <!-- Method 3: addEventListener, html part-->
+    <button id="btn2">Method 3</button>
+    <p>Use addEventListener. Allows more event listeners. More flexible</p>
+    <!-- using 3 methods with named functions-->
+    <h3>Using function</h3>
+    <button onclick="alertFunction()">Named function click me!</button>
+    <!-- Trying out stuffs-->
+    <h3>Even better use of addEventListerner()</h3>
+    <button id="btn3">Trying out stuffs</button>
+    <!-- Attaching listeners to gorups of nodes-->
+    <div id="Container">
+        <button id="1">Click me 1</button>
+        <button id="2">Click me 2</button>
+        <button id="3">Click me 3</button>
+    </div>
+    <!-- Get a nodelist iwth querySelectorAll('selector') -->
+
+</body>
+</html>
